@@ -1,7 +1,9 @@
+ERL = erl
+
 all: compile run
 
 compile:
-    erl -make
+    $(ERL) -make
 
 run:
-    erl -noshell -s binToInt convert ("1001") -s init stop
+    $(ERL) -noshell -s binToInt convert ("1001") -s init stop
